@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:black">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Calculate your burned calories<h2>
+            <h3>Duration(in mins)</h3>
+            <input id="first" name="Duration" type="number " required="required">
+            <h3>Heart_Rate(beats per minute)</h3><br><input id="second" name="Heart_Rate" required="required" type="number ">
+            
+         
+            
+            <h3>Age</h3><input id="sixth" name="Age" required="required"  type="number ", required="required" >
+            <h3>Weight</h3><input id="fifth" name="Weight" required="required"  type="number " , required="required">
+            
+            <br><br><button id="sub" type="submit ">Calculate</button><br>
+        </form>
+    </div>
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">          
+           </div>
+           <p class='footer-description'>Made with by Abhisek Datta.</p>
+       </div>
+       
+
+
+
+
+
+</body>
+
+</html>
